@@ -1,7 +1,6 @@
 package br.com.alura.screenmatch.calculos;
 
-import alura.br.com.alura.screenmatch.modelos.Filme;
-import alura.br.com.alura.screenmatch.modelos.Titulo;
+import br.com.alura.screenmatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {
 
