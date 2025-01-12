@@ -1,8 +1,12 @@
 package br.com.alura.screenmatch.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo {
 
+    @SerializedName("Title")
     private String nome;
+    @SerializedName("Year")
     private int anoDelançamento;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
@@ -14,6 +18,12 @@ public class Titulo {
         this.anoDelançamento = anoDelançamento;
     }
 
+    public Titulo(TituloOmdb meuTituloOmdb) {
+        this.nome = meuTituloOmdb.title();
+        this.anoDelançamento = Integer.valueOf(meuTituloOmdb.year());
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,1));
+    }
+
     public void exibeFichaTecnica(){
         System.out.println(nome);
         System.out.println(anoDelançamento);
@@ -22,6 +32,11 @@ public class Titulo {
     public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totaldeAvaliacoes ++;
+    }
+
+    @Override
+    public String toString(){
+        return "nome: " + this.getNome() + "(" + this.getAnoDelançamento() + ")";
     }
 
     public double pegaMedia(){
