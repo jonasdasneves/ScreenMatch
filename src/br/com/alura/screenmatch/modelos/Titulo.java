@@ -1,12 +1,11 @@
 package br.com.alura.screenmatch.modelos;
 
+import br.com.alura.screenmatch.exception.ErroDeConversaoDeAnoException;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo {
 
-    @SerializedName("Title")
     private String nome;
-    @SerializedName("Year")
     private int anoDelançamento;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
@@ -20,6 +19,13 @@ public class Titulo {
 
     public Titulo(TituloOmdb meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
+        if(meuTituloOmdb.year().length() > 4){
+
+            throw new ErroDeConversaoDeAnoException("Não consegui converter o ano por conta de caracter não esperado"){
+
+            };
+        }
+
         this.anoDelançamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,1));
     }
