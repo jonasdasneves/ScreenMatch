@@ -27,7 +27,7 @@ public class Titulo {
         }
 
         this.anoDelançamento = Integer.valueOf(meuTituloOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,1));
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,2));
     }
 
     public void exibeFichaTecnica(){
@@ -42,7 +42,7 @@ public class Titulo {
 
     @Override
     public String toString(){
-        return "nome: " + this.getNome() + "(" + this.getAnoDelançamento() + ")";
+        return "(nome: " + this.getNome() + ", ano de lançamento: " + this.getAnoDelançamento() + ", duração em minutos: " + this.getDuracaoEmMinutos() + ")";
     }
 
     public double pegaMedia(){
