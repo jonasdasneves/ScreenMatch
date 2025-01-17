@@ -6,5 +6,37 @@
     "SomaDasAvaliacoes": 0.0,
     "TotaldeAvaliacoes": 0,
     "DuracaoEmMinutos": 60
+  },
+  {
+    "Nome": "X-Men",
+    "AnoDelançamento": 2000,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotaldeAvaliacoes": 0,
+    "DuracaoEmMinutos": 10
+  },
+  {
+    "Nome": "Me Before You",
+    "AnoDelançamento": 2016,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotaldeAvaliacoes": 0,
+    "DuracaoEmMinutos": 11
+  },
+  {
+    "Nome": "The Lord of the Rings",
+    "AnoDelançamento": 1978,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotaldeAvaliacoes": 0,
+    "DuracaoEmMinutos": 13
+  },
+  {
+    "Nome": "John Wick",
+    "AnoDelançamento": 2014,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotaldeAvaliacoes": 0,
+    "DuracaoEmMinutos": 10
   }
 ]

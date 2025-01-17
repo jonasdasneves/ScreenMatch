@@ -19,7 +19,7 @@ public class Titulo {
 
     public Titulo(TituloOmdb meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
-        if(meuTituloOmdb.year().length() > 4){
+        if(meuTituloOmdb.year() != null && meuTituloOmdb.year().length() > 4){
 
             throw new ErroDeConversaoDeAnoException("Não consegui converter o ano por conta de caracter não esperado"){
 
